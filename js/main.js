@@ -403,7 +403,7 @@ function parseLine(row) {
     r.company = row.Company;
     r.letter = row["Level Audition"];
     r.letter2 = row["Re-Evaluation"];
-    r.letter3 = row["2nd Re-Evaluation"];
+    // r.letter3 = row["2nd Re-Evaluation"];
     r.specialNote = row.note;
     r.ranking = [];
     episodes.forEach(function(episode, i) {
