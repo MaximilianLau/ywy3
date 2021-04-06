@@ -21,7 +21,6 @@ var colors = {
     "A": "#fb9fcb",
     "B": "#B6D2EB",
     "C": "#ffe769",
-    "D": "#9dedc2",
     "N": "gray",
     "?": "#000000",
     "-": "#000000"
@@ -34,7 +33,7 @@ var svg = d3.select("#plot").append("svg")
     .attr("width", width + padding * 2);
 
 var scaleX = d3.scaleLinear().domain([0, episodes.length - 1]).range([0, width]);
-var scaleY = d3.scaleLinear().domain([0, 80]).range([0, height]);
+var scaleY = d3.scaleLinear().domain([0, 118]).range([0, height]);
 var plot = svg.append("g").attr("transform", "translate(" + padding + "," + padding + ")");
 
 setXAxis();
